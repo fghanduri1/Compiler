@@ -1,0 +1,11 @@
+C:\Users\fghan\source\repos\GhanduriFatima2\bin\Debug\netcoreapp3.0\GhanduriFatima2.exe
+C:\Users\fghan\source\repos\GhanduriFatima2\bin\Debug\netcoreapp3.0\GhanduriFatima2.deps.json
+C:\Users\fghan\source\repos\GhanduriFatima2\bin\Debug\netcoreapp3.0\GhanduriFatima2.runtimeconfig.json
+C:\Users\fghan\source\repos\GhanduriFatima2\bin\Debug\netcoreapp3.0\GhanduriFatima2.runtimeconfig.dev.json
+C:\Users\fghan\source\repos\GhanduriFatima2\bin\Debug\netcoreapp3.0\GhanduriFatima2.dll
+C:\Users\fghan\source\repos\GhanduriFatima2\bin\Debug\netcoreapp3.0\GhanduriFatima2.pdb
+C:\Users\fghan\source\repos\GhanduriFatima2\obj\Debug\netcoreapp3.0\GhanduriFatima2.csprojAssemblyReference.cache
+C:\Users\fghan\source\repos\GhanduriFatima2\obj\Debug\netcoreapp3.0\GhanduriFatima2.AssemblyInfoInputs.cache
+C:\Users\fghan\source\repos\GhanduriFatima2\obj\Debug\netcoreapp3.0\GhanduriFatima2.AssemblyInfo.cs
+C:\Users\fghan\source\repos\GhanduriFatima2\obj\Debug\netcoreapp3.0\GhanduriFatima2.dll
+C:\Users\fghan\source\repos\GhanduriFatima2\obj\Debug\netcoreapp3.0\GhanduriFatima2.pdb

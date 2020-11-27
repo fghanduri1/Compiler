@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "GhanduriFatima2": {
+      "commandName": "Project",
+      "commandLineArgs": "example.tri out.tam out.txt",
+      "workingDirectory": "C:\\Users\\fghan\\source\\repos\\GhanduriFatima2"
+    }
+  }
+}
