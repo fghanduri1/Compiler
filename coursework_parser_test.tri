@@ -1,0 +1,46 @@
+!This test file will cover every condition in the parser grammar
+
+!identifier := 5 !<single-command> ::= <identifier> := <expression>; <primary-expression> ::= <integer-literal>
+!identifier := 'd'; !<single-command> ::= <identifier> := <expression>; <primary-expression> ::= <character-literal>
+!identifier := H !<single-command> ::= <identifier> := <expression>; <primary-expression> ::= <identifier>
+
+!Testing parameters
+
+!identifier := H(g) !<single-command> ::= <identifier> := <expression>; <primary-expression> ::= <identifier> ( <parameters> )
+!identifier := H(g,5); !<single-command> ::= <identifier> := <expression>; <primary-expression> ::= <identifier> ( <parameters> )
+!identifier := H(g,var jok) !<single-command> ::= <identifier> := <expression>; <primary-expression> ::= <identifier> ( <parameters> )
+
+!All parameters tested
+
+!identifier := +'a'-5 !<single-command> ::= <identifier> := <expression>; <primary-expression> ::= <operator> <primary-expression>
+!identifier := (5) !<single-command> ::= <identifier> := <expression>; <primary-expression> ::= ( <expression> )
+!identifier := (5 ? 6 : 'a') !<single-command> ::= <identifier> := <expression>; <primary-expression> ::= ( <expression> )
+
+!All primary expressions tested
+
+!Testing multiple single commands (semicolon)
+!identifier := (5) !<single-command> ::= <identifier> := <expression>; <primary-expression> ::= ( <expression> )
+!identifier := (5 ? 6 : 'a') !<single-command> ::= <identifier> := <expression>; <primary-expression> ::= ( <expression> )
+
+!Multiple commands passed
+
+!if 5 then identifier := 5 else identifier := 6 !if <expression> then <single-command> else <single-command>
+!while 5 do identifier := 6 !while <expression> do <single-command>
+
+!Testing declarations
+
+!let const identifier ~ 5 in identifier := 6 !let <declaration> in <single-command>
+!let var identifier : Integer in identifier := 6 !let <declaration> in <single-command>
+!let var identifier : Integer := 5; var identifier : Integer := 5 in identifier := 6 !let <declaration> in <single-command>
+!let const identifier ~ 5; const identifier ~ 5 in identifier := 6 !let <declaration> in <single-command>
+
+!Declarations tested
+ 
+!begin identifier_45 := 6 end !begin <command> end
+
+!skip
+
+!if 5 if identifier := 5 if identifier := 6 !testing error handling regarding expected tokens
+!let if identifier ~ 5 in identifier := 6 !testing error handling regarding incorrect declaration
+!~ := 5 !testing error handling regarding incorrect single command
+!identifier := @ !testing error handling regarding incorrect primary expression

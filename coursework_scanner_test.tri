@@ -1,0 +1,19 @@
+a !should return identifier
+a15r !should return identifier
+5 !should return integer
+666 !should return integer
+'a' !should return graphic
+'5' !should return graphic
+'+' !should return graphic
+'.' !should return graphic
+'!' !should return graphic
+'?' !should return graphic
+'_' !should return graphic
+' ' !should return graphic
++ !should return operator
+5ar !should return integer for 5 and return ar as identifier
+@ !should return unknown character
+',' !should return invalid graphic for ', and will return unterminated charLiteral for 
+	!having an apostrophe with a space without a second apostrophe afterwards)
+'asd' !should return unterminated charLiteral for 'a, identify sd as an identifier and	
+	!return unterminated charLiteral for having an apostrophe with a space without a second apostrophe
